@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Free Image Object Remover</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Free Image Object Remover</h1>
-<p>Upload images you own. Remove logos, text, or unwanted objects.</p>
+  <h1>Free Image Object Remover</h1>
+  <p class="subtitle">Upload your own image and paint over unwanted objects</p>
 
-<input type="file" id="upload">
-<canvas id="canvas"></canvas>
+  <input type="file" id="upload" accept="image/*">
 
-<button onclick="processImage()">Remove Object</button>
+  <div class="canvas-container">
+    <canvas id="canvas"></canvas>
+  </div>
 
-<p class="disclaimer">
-Only upload images you own or have permission to edit.
-</p>
+  <button id="clear">Clear Mask</button>
 
-<script src="script.js"></script>
+  <p class="disclaimer">
+    Only upload images you own or have permission to edit.
+  </p>
+
+  <script src="script.js"></script>
 </body>
-  </html>
+</html>
